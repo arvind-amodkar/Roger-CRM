@@ -6,5 +6,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['*'],
+    },
+  },
 }
 module.exports = nextConfig
