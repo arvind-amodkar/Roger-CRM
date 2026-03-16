@@ -1,9 +1,12 @@
-import { redirect } from 'next/navigation'
-
 export default function Home() {
-  if (typeof window === 'undefined') {
-    redirect('/login')
-  }
-
-  return null
+  return (
+    <div style={{
+      display:"flex",
+      height:"100vh",
+      justifyContent:"center",
+      alignItems:"center"
+    }}>
+      <a href="/login">Go to Login</a>
+    </div>
+  )
 }
